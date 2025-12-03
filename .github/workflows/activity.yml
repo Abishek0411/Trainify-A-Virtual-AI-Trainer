@@ -58,4 +58,4 @@ jobs:
           CURRENT_BRANCH=$(git rev-parse --abbrev-ref HEAD)
           
           # 4. Push to that specific branch
-          git push https://x-access-token:${{ secrets.GH_PAT }}@github.com/Abishek0411/${{ env.SELECTED_REPO }}.git $CURRENT_BRANCH
+          git push https://Abishek0411:${{ secrets.GH_PAT }}@github.com/Abishek0411/${{ env.SELECTED_REPO }}.git $CURRENT_BRANCH
