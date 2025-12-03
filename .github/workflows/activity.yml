@@ -26,7 +26,7 @@ jobs:
       - name: Select repository
         if: env.CONTINUE_RUN == 'true'
         run: |
-          REPOS=("Fanpit-Backend" "PennyWise" "Skincare-Analysis-Frontend" "-Trainify-A-Virtual-AI-Trainer" "sense-guard-monitor" "Underwater-Plastic-Detection")
+          REPOS=("Fanpit-Backend" "PennyWise" "Skincare-Analysis-Frontend" "Trainify-A-Virtual-AI-Trainer" "sense-guard-monitor" "Underwater-Plastic-Detection")
           SELECTED_REPO=${REPOS[$RANDOM % ${#REPOS[@]}]}
           echo "SELECTED_REPO=$SELECTED_REPO" >> $GITHUB_ENV
 
